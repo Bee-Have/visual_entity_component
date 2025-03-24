@@ -1,11 +1,11 @@
 extends Node2D
 
-@onready var switch := $Switch
-@onready var label := $Label
+@onready var switch: Button = $Switch
+@onready var label: Label = $Label
 ## "rect" will become the entity component
-@onready var rect := $TmpEntity
+@onready var rect: ColorRect = $TmpEntity
 
-func _ready() :
+func _ready() -> void:
 	switch.pressed.connect(switch_action)
 
 
