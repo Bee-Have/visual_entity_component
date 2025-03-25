@@ -1,6 +1,43 @@
-[gd_scene load_steps=2 format=3 uid="uid://cceaev3bxp6ob"]
+[gd_scene load_steps=12 format=3 uid="uid://cceaev3bxp6ob"]
 
 [ext_resource type="Script" uid="uid://dxvum115lihu" path="res://main/coodinator.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://onp5be825gnv" path="res://entities/dwarfs/fighter/hammer/dwarf_fighter_hammer.png" id="2_pjrb6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67ri8"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(11.0712, 16.5249, 49.6271, 67.3388)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grrlh"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(89.3965, 22.7194, 48.382, 57.5548)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i4oc"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(5.62794, 95.61, 44.3964, 51.3605)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c651c"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(306.357, 10.8691, 135.257, 114.188)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kfbq2"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(24.0654, 308.489, 56.4757, 54.3174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wy1v"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(21.2987, 192.085, 83.5018, 87.5099)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dugh"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(16.1951, 390.868, 58.5423, 26.1155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjrb6"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(163.719, 127.268, 100.706, 75.5778)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwkvk"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(163.165, 7.45227, 100.803, 87.7683)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ig7tw")
@@ -27,3 +64,68 @@ offset_top = 108.0
 offset_right = 448.0
 offset_bottom = 148.0
 scale = Vector2(6.90528, 10.6219)
+
+[node name="Hammer" type="Node2D" parent="."]
+
+[node name="ArmLeft" type="Sprite2D" parent="Hammer"]
+position = Vector2(20.5, 0.5)
+scale = Vector2(-1, 1)
+texture = SubResource("AtlasTexture_67ri8")
+
+[node name="ForearmLeft" type="Sprite2D" parent="Hammer"]
+position = Vector2(37, 36)
+rotation = 2.70429
+scale = Vector2(1, -1)
+texture = SubResource("AtlasTexture_grrlh")
+
+[node name="HandLeft" type="Sprite2D" parent="Hammer"]
+position = Vector2(63, 65)
+rotation = -0.75627
+texture = SubResource("AtlasTexture_0i4oc")
+
+[node name="Head" type="Sprite2D" parent="Hammer"]
+position = Vector2(-1, -83)
+texture = SubResource("AtlasTexture_c651c")
+
+[node name="ForelegLeft" type="Sprite2D" parent="Hammer"]
+position = Vector2(10.5, 126.5)
+texture = SubResource("AtlasTexture_kfbq2")
+
+[node name="ThighLeft" type="Sprite2D" parent="Hammer"]
+position = Vector2(9.5, 77.5)
+texture = SubResource("AtlasTexture_3wy1v")
+
+[node name="FootLeft" type="Sprite2D" parent="Hammer"]
+position = Vector2(17.5, 152.5)
+texture = SubResource("AtlasTexture_4dugh")
+
+[node name="ForelegRight" type="Sprite2D" parent="Hammer"]
+position = Vector2(-4, 131)
+texture = SubResource("AtlasTexture_kfbq2")
+
+[node name="ThighRight" type="Sprite2D" parent="Hammer"]
+position = Vector2(-5, 82)
+texture = SubResource("AtlasTexture_3wy1v")
+
+[node name="FootRight" type="Sprite2D" parent="Hammer"]
+position = Vector2(3, 157)
+texture = SubResource("AtlasTexture_4dugh")
+
+[node name="Hips" type="Sprite2D" parent="Hammer"]
+position = Vector2(1, 55)
+texture = SubResource("AtlasTexture_pjrb6")
+
+[node name="Torso" type="Sprite2D" parent="Hammer"]
+texture = SubResource("AtlasTexture_xwkvk")
+
+[node name="HandRight" type="Sprite2D" parent="Hammer"]
+position = Vector2(-52, 86)
+texture = SubResource("AtlasTexture_0i4oc")
+
+[node name="ForearmRight" type="Sprite2D" parent="Hammer"]
+position = Vector2(-40, 47)
+texture = SubResource("AtlasTexture_grrlh")
+
+[node name="ArmRight" type="Sprite2D" parent="Hammer"]
+position = Vector2(-29, 7)
+texture = SubResource("AtlasTexture_67ri8")
