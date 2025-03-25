@@ -1,7 +1,48 @@
-[gd_scene load_steps=12 format=3 uid="uid://cceaev3bxp6ob"]
+[gd_scene load_steps=24 format=3 uid="uid://cceaev3bxp6ob"]
 
 [ext_resource type="Script" uid="uid://dxvum115lihu" path="res://main/coodinator.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://onp5be825gnv" path="res://entities/dwarfs/fighter/hammer/dwarf_fighter_hammer.png" id="2_pjrb6"]
+[ext_resource type="Texture2D" uid="uid://bbjvgoc54yvps" path="res://entities/dwarfs/fighter/poleaxe/dwarf_fighter_poleaxe.png" id="3_xwkvk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hmqs"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(1.493, -0.458424, 91.8295, 95.4938)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0sk7"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(3.46617, 104.711, 65.0008, 59.584)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_piupu"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(109.77, 5.14055, 68.2798, 72.5208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s758e"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(12.3134, 469.191, 78.1487, 36.6013)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3o0a"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(11.6236, 391.432, 66.2434, 70.0988)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5xyti"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(12.0247, 284.807, 77.1087, 96.0004)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_na0o7"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(3.43826, 178.506, 138.289, 101.961)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwcvl"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(199.301, 1.07872, 136.058, 125.26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73k8k"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(147.655, 248.325, 218.018, 264.264)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vapsy"]
+atlas = ExtResource("3_xwkvk")
+region = Rect2(380.161, 0, 131.839, 512)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_67ri8"]
 atlas = ExtResource("2_pjrb6")
@@ -39,6 +80,10 @@ region = Rect2(163.719, 127.268, 100.706, 75.5778)
 atlas = ExtResource("2_pjrb6")
 region = Rect2(163.165, 7.45227, 100.803, 87.7683)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsumw"]
+atlas = ExtResource("2_pjrb6")
+region = Rect2(374.696, 185.325, 124.699, 326.675)
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ig7tw")
 
@@ -65,67 +110,168 @@ offset_right = 448.0
 offset_bottom = 148.0
 scale = Vector2(6.90528, 10.6219)
 
+[node name="Poleaxe" type="Node2D" parent="."]
+position = Vector2(265, 0)
+
+[node name="ArmLeft" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(51, 4.5)
+scale = Vector2(-1, 1)
+texture = SubResource("AtlasTexture_4hmqs")
+
+[node name="HandLeft" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(130, 50)
+rotation = -1.36402
+texture = SubResource("AtlasTexture_q0sk7")
+
+[node name="ForearmLeft" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(83, 38)
+rotation = -1.26897
+texture = SubResource("AtlasTexture_piupu")
+
+[node name="FootLeft" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(25, 166)
+texture = SubResource("AtlasTexture_s758e")
+
+[node name="ForelegLeft" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(15, 131)
+texture = SubResource("AtlasTexture_n3o0a")
+
+[node name="ThighLeft" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(24, 83)
+texture = SubResource("AtlasTexture_5xyti")
+
+[node name="FootRight" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(-20, 170)
+texture = SubResource("AtlasTexture_s758e")
+
+[node name="ForelegRight" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(-30, 135)
+texture = SubResource("AtlasTexture_n3o0a")
+
+[node name="ThighRight" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(-21, 87)
+texture = SubResource("AtlasTexture_5xyti")
+
+[node name="Hips" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(3, 66)
+texture = SubResource("AtlasTexture_na0o7")
+
+[node name="Torso" type="Sprite2D" parent="Poleaxe"]
+texture = SubResource("AtlasTexture_fwcvl")
+
+[node name="Head" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(10, -159)
+texture = SubResource("AtlasTexture_73k8k")
+
+[node name="Poleaxe" type="Sprite2D" parent="Poleaxe"]
+visible = false
+position = Vector2(37, 123)
+rotation = 1.57198
+scale = Vector2(1, 1)
+texture = SubResource("AtlasTexture_vapsy")
+
+[node name="HandRight" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(-74, 90.5)
+texture = SubResource("AtlasTexture_q0sk7")
+
+[node name="ForearmRight" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(-79, 45.5)
+texture = SubResource("AtlasTexture_piupu")
+
+[node name="ArmRight" type="Sprite2D" parent="Poleaxe"]
+position = Vector2(-58, 4.5)
+texture = SubResource("AtlasTexture_4hmqs")
+
 [node name="Hammer" type="Node2D" parent="."]
+position = Vector2(276, 0)
 
 [node name="ArmLeft" type="Sprite2D" parent="Hammer"]
-position = Vector2(20.5, 0.5)
-scale = Vector2(-1, 1)
+position = Vector2(33, 1)
+rotation = -0.423976
+scale = Vector2(-1.427, 1.427)
 texture = SubResource("AtlasTexture_67ri8")
 
 [node name="ForearmLeft" type="Sprite2D" parent="Hammer"]
-position = Vector2(37, 36)
-rotation = 2.70429
-scale = Vector2(1, -1)
+position = Vector2(76, 43)
+rotation = 2.3573
+scale = Vector2(1.295, -1.295)
 texture = SubResource("AtlasTexture_grrlh")
 
 [node name="HandLeft" type="Sprite2D" parent="Hammer"]
-position = Vector2(63, 65)
-rotation = -0.75627
+position = Vector2(122, 54)
+rotation = -1.81489
+scale = Vector2(1.355, 1.224)
 texture = SubResource("AtlasTexture_0i4oc")
 
 [node name="Head" type="Sprite2D" parent="Hammer"]
-position = Vector2(-1, -83)
+position = Vector2(14, -99)
+rotation = 0.0859467
+scale = Vector2(1.24, 1.24)
 texture = SubResource("AtlasTexture_c651c")
 
 [node name="ForelegLeft" type="Sprite2D" parent="Hammer"]
-position = Vector2(10.5, 126.5)
+position = Vector2(9.20795, 141.94)
+scale = Vector2(1.24, 1.24)
 texture = SubResource("AtlasTexture_kfbq2")
 
 [node name="ThighLeft" type="Sprite2D" parent="Hammer"]
-position = Vector2(9.5, 77.5)
+position = Vector2(9.48796, 86)
+scale = Vector2(1.12019, 1.12019)
 texture = SubResource("AtlasTexture_3wy1v")
 
 [node name="FootLeft" type="Sprite2D" parent="Hammer"]
-position = Vector2(17.5, 152.5)
+position = Vector2(16.208, 167.94)
+scale = Vector2(1.24, 1.24)
 texture = SubResource("AtlasTexture_4dugh")
 
 [node name="ForelegRight" type="Sprite2D" parent="Hammer"]
-position = Vector2(-4, 131)
+position = Vector2(-36.11, 146.44)
+scale = Vector2(1.24, 1.24)
 texture = SubResource("AtlasTexture_kfbq2")
 
 [node name="ThighRight" type="Sprite2D" parent="Hammer"]
-position = Vector2(-5, 82)
+position = Vector2(-24.83, 90)
+rotation = 0.056598
+scale = Vector2(1.12019, 1.12019)
 texture = SubResource("AtlasTexture_3wy1v")
 
 [node name="FootRight" type="Sprite2D" parent="Hammer"]
-position = Vector2(3, 157)
+position = Vector2(-29.11, 172.44)
+scale = Vector2(1.24, 1.24)
 texture = SubResource("AtlasTexture_4dugh")
 
 [node name="Hips" type="Sprite2D" parent="Hammer"]
-position = Vector2(1, 55)
+position = Vector2(-6, 69)
+rotation = 0.132755
+scale = Vector2(1.43365, 1.35965)
 texture = SubResource("AtlasTexture_pjrb6")
 
 [node name="Torso" type="Sprite2D" parent="Hammer"]
+position = Vector2(-2, 0)
+rotation = 0.167876
+scale = Vector2(1.39042, 1.35098)
 texture = SubResource("AtlasTexture_xwkvk")
 
+[node name="Hammer" type="Sprite2D" parent="Hammer"]
+visible = false
+position = Vector2(-78, 92)
+rotation = 1.57208
+texture = SubResource("AtlasTexture_bsumw")
+
 [node name="HandRight" type="Sprite2D" parent="Hammer"]
-position = Vector2(-52, 86)
+position = Vector2(-91, 101)
+rotation = -0.386373
+scale = Vector2(1.35502, 1.22447)
 texture = SubResource("AtlasTexture_0i4oc")
 
 [node name="ForearmRight" type="Sprite2D" parent="Hammer"]
-position = Vector2(-40, 47)
+position = Vector2(-82, 52)
+rotation = -0.200413
+scale = Vector2(1.29513, 1.29513)
 texture = SubResource("AtlasTexture_grrlh")
 
 [node name="ArmRight" type="Sprite2D" parent="Hammer"]
-position = Vector2(-29, 7)
+position = Vector2(-59, 3)
+rotation = 0.366355
+scale = Vector2(1.42673, 1.42673)
 texture = SubResource("AtlasTexture_67ri8")
