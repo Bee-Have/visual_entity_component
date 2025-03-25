@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wo3wjg6jy1k2"
-path="res://.godot/imported/dwarf_summoner_tattoo.png-ec80c65d3abb592ca6b882a7090c5a01.ctex"
+uid="uid://c0bmjxuydasdk"
+path="res://.godot/imported/dwarf_summoner_staff.png-806da72f9e06c46b8bf7c538cf4821bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/summoner/dwarf_summoner_tattoo.png"
-dest_files=["res://.godot/imported/dwarf_summoner_tattoo.png-ec80c65d3abb592ca6b882a7090c5a01.ctex"]
+source_file="res://entities/dwarfs/summoner/staff/dwarf_summoner_staff.png"
+dest_files=["res://.godot/imported/dwarf_summoner_staff.png-806da72f9e06c46b8bf7c538cf4821bd.ctex"]
 
 [params]
 

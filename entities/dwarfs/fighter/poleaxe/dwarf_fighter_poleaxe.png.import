@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbjvgoc54yvps"
-path="res://.godot/imported/dwarf_fighter_poleaxe.png-01d014e74a8270a70423eb3c042cb4c9.ctex"
+path="res://.godot/imported/dwarf_fighter_poleaxe.png-3109069d3947ddc71ce815293a5a91be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/fighter/dwarf_fighter_poleaxe.png"
-dest_files=["res://.godot/imported/dwarf_fighter_poleaxe.png-01d014e74a8270a70423eb3c042cb4c9.ctex"]
+source_file="res://entities/dwarfs/fighter/poleaxe/dwarf_fighter_poleaxe.png"
+dest_files=["res://.godot/imported/dwarf_fighter_poleaxe.png-3109069d3947ddc71ce815293a5a91be.ctex"]
 
 [params]
 

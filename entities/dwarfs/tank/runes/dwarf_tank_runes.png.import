@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck8ra0hbei628"
-path="res://.godot/imported/dwarf_support_warhorn_round.png-e0176bacae4495fd0f326539e3f10a2e.ctex"
+uid="uid://bja7q1delnt6x"
+path="res://.godot/imported/dwarf_tank_runes.png-e852ab07d66bc508931a4439232fe769.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/support/dwarf_support_warhorn_round.png"
-dest_files=["res://.godot/imported/dwarf_support_warhorn_round.png-e0176bacae4495fd0f326539e3f10a2e.ctex"]
+source_file="res://entities/dwarfs/tank/runes/dwarf_tank_runes.png"
+dest_files=["res://.godot/imported/dwarf_tank_runes.png-e852ab07d66bc508931a4439232fe769.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkby66b70ne1n"
-path="res://.godot/imported/dwarf_rogue_seax.png-b535fcb8648a1625524826f3d8d3777e.ctex"
+uid="uid://dji0wloo0xyhh"
+path="res://.godot/imported/dwarf_tank_muscle.png-fe7edb13699180c87c6f6d691d414188.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/rogue/dwarf_rogue_seax.png"
-dest_files=["res://.godot/imported/dwarf_rogue_seax.png-b535fcb8648a1625524826f3d8d3777e.ctex"]
+source_file="res://entities/dwarfs/tank/muscle/dwarf_tank_muscle.png"
+dest_files=["res://.godot/imported/dwarf_tank_muscle.png-fe7edb13699180c87c6f6d691d414188.ctex"]
 
 [params]
 

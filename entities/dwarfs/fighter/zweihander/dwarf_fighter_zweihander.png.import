@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://onp5be825gnv"
-path="res://.godot/imported/dwarf_fighter_hammer.png-81465a9211072ad191a65c90b6f90688.ctex"
+uid="uid://dyn3earei7klv"
+path="res://.godot/imported/dwarf_fighter_zweihander.png-fa00b8be7691360bc029f8ecf7dc2101.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/fighter/dwarf_fighter_hammer.png"
-dest_files=["res://.godot/imported/dwarf_fighter_hammer.png-81465a9211072ad191a65c90b6f90688.ctex"]
+source_file="res://entities/dwarfs/fighter/zweihander/dwarf_fighter_zweihander.png"
+dest_files=["res://.godot/imported/dwarf_fighter_zweihander.png-fa00b8be7691360bc029f8ecf7dc2101.ctex"]
 
 [params]
 

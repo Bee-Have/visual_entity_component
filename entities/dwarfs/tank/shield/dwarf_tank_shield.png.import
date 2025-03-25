@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgbu1doibdgvg"
-path="res://.godot/imported/dwarf_fighter_warhammer.png-75fe128ec0f3bddc377aee6a93bfcb68.ctex"
+uid="uid://b4e60tcnyvmoy"
+path="res://.godot/imported/dwarf_tank_shield.png-f9badcd7953dcdf0724da25cab887c92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/fighter/dwarf_fighter_warhammer.png"
-dest_files=["res://.godot/imported/dwarf_fighter_warhammer.png-75fe128ec0f3bddc377aee6a93bfcb68.ctex"]
+source_file="res://entities/dwarfs/tank/shield/dwarf_tank_shield.png"
+dest_files=["res://.godot/imported/dwarf_tank_shield.png-f9badcd7953dcdf0724da25cab887c92.ctex"]
 
 [params]
 

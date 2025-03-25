@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0bmjxuydasdk"
-path="res://.godot/imported/dwarf_summoner_staff.png-f8f7bdb6473d1e9774f7b470bca0d1ed.ctex"
+uid="uid://duqx87ulj2m7d"
+path="res://.godot/imported/dwarf_rogue_bollox.png-c2614758635e6431617119c09166aca7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/summoner/dwarf_summoner_staff.png"
-dest_files=["res://.godot/imported/dwarf_summoner_staff.png-f8f7bdb6473d1e9774f7b470bca0d1ed.ctex"]
+source_file="res://entities/dwarfs/rogue/bollox_dagger/dwarf_rogue_bollox.png"
+dest_files=["res://.godot/imported/dwarf_rogue_bollox.png-c2614758635e6431617119c09166aca7.ctex"]
 
 [params]
 
