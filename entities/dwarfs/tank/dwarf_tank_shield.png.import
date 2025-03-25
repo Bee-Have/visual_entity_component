@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3c48pq8qtp50"
-path="res://.godot/imported/dwarf_support_warhorn_straight.png-71fee2e0d55c26c119555bc2bbd8b279.ctex"
+uid="uid://b4e60tcnyvmoy"
+path="res://.godot/imported/dwarf_tank_shield.png-b272b3e3e6a1a390c3cbda80cdba966f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_support_warhorn_straight.png"
-dest_files=["res://.godot/imported/dwarf_support_warhorn_straight.png-71fee2e0d55c26c119555bc2bbd8b279.ctex"]
+source_file="res://entities/dwarfs/tank/dwarf_tank_shield.png"
+dest_files=["res://.godot/imported/dwarf_tank_shield.png-b272b3e3e6a1a390c3cbda80cdba966f.ctex"]
 
 [params]
 

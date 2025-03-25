@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bja7q1delnt6x"
-path="res://.godot/imported/dwarf_tank_runes.png-cc27a28d59585ff456e75f8d4c00f311.ctex"
+uid="uid://wo3wjg6jy1k2"
+path="res://.godot/imported/dwarf_summoner_tattoo.png-ec80c65d3abb592ca6b882a7090c5a01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_tank_runes.png"
-dest_files=["res://.godot/imported/dwarf_tank_runes.png-cc27a28d59585ff456e75f8d4c00f311.ctex"]
+source_file="res://entities/dwarfs/summoner/dwarf_summoner_tattoo.png"
+dest_files=["res://.godot/imported/dwarf_summoner_tattoo.png-ec80c65d3abb592ca6b882a7090c5a01.ctex"]
 
 [params]
 

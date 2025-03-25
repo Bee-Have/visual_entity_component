@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duqx87ulj2m7d"
-path="res://.godot/imported/dwarf_rogue_bollox.png-8db38ac4740b6edd1d143c498d2477e0.ctex"
+uid="uid://bgbu1doibdgvg"
+path="res://.godot/imported/dwarf_fighter_warhammer.png-75fe128ec0f3bddc377aee6a93bfcb68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_rogue_bollox.png"
-dest_files=["res://.godot/imported/dwarf_rogue_bollox.png-8db38ac4740b6edd1d143c498d2477e0.ctex"]
+source_file="res://entities/dwarfs/fighter/dwarf_fighter_warhammer.png"
+dest_files=["res://.godot/imported/dwarf_fighter_warhammer.png-75fe128ec0f3bddc377aee6a93bfcb68.ctex"]
 
 [params]
 

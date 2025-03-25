@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4e60tcnyvmoy"
-path="res://.godot/imported/dwarf_tank_shield.png-b7a88ef456e288694eea13b9a407cb25.ctex"
+uid="uid://duqx87ulj2m7d"
+path="res://.godot/imported/dwarf_rogue_bollox.png-07b44e18c365d99248295dd124ee5520.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_tank_shield.png"
-dest_files=["res://.godot/imported/dwarf_tank_shield.png-b7a88ef456e288694eea13b9a407cb25.ctex"]
+source_file="res://entities/dwarfs/rogue/dwarf_rogue_bollox.png"
+dest_files=["res://.godot/imported/dwarf_rogue_bollox.png-07b44e18c365d99248295dd124ee5520.ctex"]
 
 [params]
 

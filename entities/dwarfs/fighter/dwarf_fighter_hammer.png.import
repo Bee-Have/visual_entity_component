@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbjvgoc54yvps"
-path="res://.godot/imported/dwarf_fighter_poleaxe.png-cf8167fa1bfda10e9eea58215ab95d12.ctex"
+uid="uid://onp5be825gnv"
+path="res://.godot/imported/dwarf_fighter_hammer.png-81465a9211072ad191a65c90b6f90688.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_fighter_poleaxe.png"
-dest_files=["res://.godot/imported/dwarf_fighter_poleaxe.png-cf8167fa1bfda10e9eea58215ab95d12.ctex"]
+source_file="res://entities/dwarfs/fighter/dwarf_fighter_hammer.png"
+dest_files=["res://.godot/imported/dwarf_fighter_hammer.png-81465a9211072ad191a65c90b6f90688.ctex"]
 
 [params]
 

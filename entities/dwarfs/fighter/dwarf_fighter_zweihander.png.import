@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wo3wjg6jy1k2"
-path="res://.godot/imported/dwarf_invoke_tattoo.png-eed8ebd44c81756ac8e2040a929c78c0.ctex"
+uid="uid://dyn3earei7klv"
+path="res://.godot/imported/dwarf_fighter_zweihander.png-cb8dcd64c35b680e68755ed8ecdd8125.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_invoke_tattoo.png"
-dest_files=["res://.godot/imported/dwarf_invoke_tattoo.png-eed8ebd44c81756ac8e2040a929c78c0.ctex"]
+source_file="res://entities/dwarfs/fighter/dwarf_fighter_zweihander.png"
+dest_files=["res://.godot/imported/dwarf_fighter_zweihander.png-cb8dcd64c35b680e68755ed8ecdd8125.ctex"]
 
 [params]
 

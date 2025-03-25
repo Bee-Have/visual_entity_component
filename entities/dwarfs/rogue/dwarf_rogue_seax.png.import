@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkby66b70ne1n"
-path="res://.godot/imported/dwarf_rogue_seax.png-da4c466cf36d84cc9c2fb86e1d60c66e.ctex"
+path="res://.godot/imported/dwarf_rogue_seax.png-b535fcb8648a1625524826f3d8d3777e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_rogue_seax.png"
-dest_files=["res://.godot/imported/dwarf_rogue_seax.png-da4c466cf36d84cc9c2fb86e1d60c66e.ctex"]
+source_file="res://entities/dwarfs/rogue/dwarf_rogue_seax.png"
+dest_files=["res://.godot/imported/dwarf_rogue_seax.png-b535fcb8648a1625524826f3d8d3777e.ctex"]
 
 [params]
 

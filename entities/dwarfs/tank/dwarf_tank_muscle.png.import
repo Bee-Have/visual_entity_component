@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0bmjxuydasdk"
-path="res://.godot/imported/dwarf_invoke_staff.png-dc520db99aff914afcc84052f280d912.ctex"
+uid="uid://dji0wloo0xyhh"
+path="res://.godot/imported/dwarf_tank_muscle.png-dbc723382da09b05d7a7a6f8eb7caba0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://entities/dwarfs/dwarf_invoke_staff.png"
-dest_files=["res://.godot/imported/dwarf_invoke_staff.png-dc520db99aff914afcc84052f280d912.ctex"]
+source_file="res://entities/dwarfs/tank/dwarf_tank_muscle.png"
+dest_files=["res://.godot/imported/dwarf_tank_muscle.png-dbc723382da09b05d7a7a6f8eb7caba0.ctex"]
 
 [params]
 
