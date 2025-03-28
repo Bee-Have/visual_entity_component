@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=3 uid="uid://cceaev3bxp6ob"]
+[gd_scene load_steps=94 format=3 uid="uid://cceaev3bxp6ob"]
 
 [ext_resource type="Script" uid="uid://dxvum115lihu" path="res://main/coodinator.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://onp5be825gnv" path="res://entities/dwarfs/fighter/hammer/dwarf_fighter_hammer.png" id="2_pjrb6"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://duqx87ulj2m7d" path="res://entities/dwarfs/rogue/bollocks_dagger/dwarf_rogue_bollox.png" id="6_kfbq2"]
 [ext_resource type="Texture2D" uid="uid://dkby66b70ne1n" path="res://entities/dwarfs/rogue/seax/dwarf_rogue_seax.png" id="7_4dugh"]
 [ext_resource type="Texture2D" uid="uid://c0bmjxuydasdk" path="res://entities/dwarfs/summoner/staff/dwarf_summoner_staff.png" id="8_67ri8"]
+[ext_resource type="Texture2D" uid="uid://wo3wjg6jy1k2" path="res://entities/dwarfs/summoner/tattoo/dwarf_summoner_tattoo.png" id="9_grrlh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4hmqs"]
 atlas = ExtResource("3_xwkvk")
@@ -308,6 +309,42 @@ region = Rect2(257.927, 330.705, 196.437, 178.938)
 [sub_resource type="AtlasTexture" id="AtlasTexture_m0bb6"]
 atlas = ExtResource("8_67ri8")
 region = Rect2(461.337, 20.5399, 34.7768, 434.946)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmy4t"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(10.2321, 17.8517, 79.3063, 90.5025)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uv824"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(116.986, 17.4121, 63.7262, 78.0646)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snp3r"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(25.1402, 124.441, 64.887, 65.7352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_571ru"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(11.3536, 459.849, 81.2509, 48.3621)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpx50"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(16.1844, 365.461, 75.4343, 69.2764)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_onlwx"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(19.4164, 232.725, 80.7058, 97.0336)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjf2p"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(198.329, 4.60528, 138.04, 122.645)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twbhu"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(150.29, 224.954, 134.447, 82.6185)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7j1mf"]
+atlas = ExtResource("9_grrlh")
+region = Rect2(350.734, 2.05898, 161.572, 154.567)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_ig7tw")
@@ -850,3 +887,74 @@ texture = SubResource("AtlasTexture_gjwcs")
 position = Vector2(-84.9801, 26.1401)
 scale = Vector2(1.08, 1.08)
 texture = SubResource("AtlasTexture_73sti")
+
+[node name="Tattoo" type="Node2D" parent="."]
+position = Vector2(-289, -9)
+
+[node name="ArmLeft" type="Sprite2D" parent="Tattoo"]
+position = Vector2(44.4156, 3.22177)
+rotation = -0.0942973
+scale = Vector2(-0.92, 1)
+texture = SubResource("AtlasTexture_gmy4t")
+
+[node name="ForearmLeft" type="Sprite2D" parent="Tattoo"]
+position = Vector2(88.4156, 40.2218)
+rotation = -1.44769
+scale = Vector2(1, 1)
+texture = SubResource("AtlasTexture_uv824")
+
+[node name="HandLeft" type="Sprite2D" parent="Tattoo"]
+position = Vector2(130.416, 54.2218)
+rotation = -1.50689
+texture = SubResource("AtlasTexture_snp3r")
+
+[node name="FootLeft" type="Sprite2D" parent="Tattoo"]
+position = Vector2(24.5, 171.5)
+texture = SubResource("AtlasTexture_571ru")
+
+[node name="ForelegLeft" type="Sprite2D" parent="Tattoo"]
+position = Vector2(19.5, 140.5)
+texture = SubResource("AtlasTexture_gpx50")
+
+[node name="ThighLeft" type="Sprite2D" parent="Tattoo"]
+position = Vector2(28.5, 94.5)
+texture = SubResource("AtlasTexture_onlwx")
+
+[node name="Torso" type="Sprite2D" parent="Tattoo"]
+texture = SubResource("AtlasTexture_tjf2p")
+
+[node name="Hips" type="Sprite2D" parent="Tattoo"]
+position = Vector2(1, 69)
+texture = SubResource("AtlasTexture_twbhu")
+
+[node name="Head" type="Sprite2D" parent="Tattoo"]
+position = Vector2(8, -88)
+texture = SubResource("AtlasTexture_7j1mf")
+
+[node name="FootRight" type="Sprite2D" parent="Tattoo"]
+position = Vector2(-30, 182)
+texture = SubResource("AtlasTexture_571ru")
+
+[node name="ForelegRight" type="Sprite2D" parent="Tattoo"]
+position = Vector2(-35, 151)
+texture = SubResource("AtlasTexture_gpx50")
+
+[node name="ThighRight" type="Sprite2D" parent="Tattoo"]
+position = Vector2(-26, 105)
+texture = SubResource("AtlasTexture_onlwx")
+
+[node name="HandRight" type="Sprite2D" parent="Tattoo"]
+position = Vector2(-71.8503, 84.1069)
+rotation = -0.228282
+texture = SubResource("AtlasTexture_snp3r")
+
+[node name="ForearmRight" type="Sprite2D" parent="Tattoo"]
+position = Vector2(-75.8503, 43.1069)
+rotation = -0.125954
+texture = SubResource("AtlasTexture_uv824")
+
+[node name="ArmRight" type="Sprite2D" parent="Tattoo"]
+position = Vector2(-53.8503, -1.89306)
+rotation = 0.318039
+scale = Vector2(0.919999, 1)
+texture = SubResource("AtlasTexture_gmy4t")
