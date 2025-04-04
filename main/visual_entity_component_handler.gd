@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var sprites_parent: Node2D = $Hammer
+@onready var sprites_parent: Node2D = $Poleaxe
 @onready var skeleton:= $Skeleton2D
 @onready var race_animator: AnimationPlayer = $RaceAnimator
 @onready var class_animator: AnimationPlayer = $ClassAnimator

@@ -1365,7 +1365,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-3, -118), Vector2(-3, -119)]
+"values": [Vector2(-3, -118), Vector2(-3, -118)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -1569,7 +1569,7 @@ tracks/19/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [2.04205, 2.08146]
+"values": [2.04205, 2.04205]
 }
 tracks/20/type = "value"
 tracks/20/imported = false
@@ -1689,7 +1689,7 @@ tracks/29/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [1.29129, 1.28511]
+"values": [1.29129, 1.29129]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n3o0a"]
@@ -1798,6 +1798,7 @@ position = Vector2(1.00002, -343)
 texture = SubResource("AtlasTexture_73k8k")
 
 [node name="Poleaxe" type="Sprite2D" parent="Poleaxe"]
+visible = false
 position = Vector2(61, -55)
 rotation = 1.57254
 scale = Vector2(1, 1)
@@ -1893,6 +1894,7 @@ scale = Vector2(1.39042, 1.35098)
 texture = SubResource("AtlasTexture_xwkvk")
 
 [node name="Hammer" type="Sprite2D" parent="Hammer"]
+visible = false
 position = Vector2(-1, -86)
 rotation = 1.65418
 scale = Vector2(1, 1)
@@ -2201,6 +2203,7 @@ position = Vector2(6.00002, -290)
 texture = SubResource("AtlasTexture_6upbg")
 
 [node name="Seax" type="Sprite2D" parent="Seax"]
+visible = false
 position = Vector2(-15, -73.0001)
 rotation = -1.40499
 texture = SubResource("AtlasTexture_y2c0j")
@@ -2356,14 +2359,20 @@ texture = SubResource("AtlasTexture_nelid")
 
 [node name="Carnyx" type="Sprite2D" parent="Carnyx"]
 visible = false
-position = Vector2(90, 96)
-rotation = 1.65281
+position = Vector2(73.0004, -90.9996)
+rotation = 1.62175
+scale = Vector2(1, 1)
 texture = SubResource("AtlasTexture_ljnho")
 
 [node name="HandRight" type="Sprite2D" parent="Carnyx"]
 position = Vector2(-74.5839, -91.282)
 rotation = 0.0910991
 texture = SubResource("AtlasTexture_6qnlh")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Carnyx/HandRight"]
+position = Vector2(146.998, -13.145)
+rotation = 1.53065
+remote_path = NodePath("../../Carnyx")
 
 [node name="ForearmRight" type="Sprite2D" parent="Carnyx"]
 position = Vector2(-78.5839, -132.282)
@@ -2433,13 +2442,18 @@ texture = SubResource("AtlasTexture_0yfeg")
 
 [node name="Cornu" type="Sprite2D" parent="Cornu"]
 visible = false
-position = Vector2(13, 87)
-rotation = 2.09439
+position = Vector2(16.9998, -79)
+rotation = 2.19562
 texture = SubResource("AtlasTexture_ts2mh")
 
 [node name="HandRight" type="Sprite2D" parent="Cornu"]
 position = Vector2(-74.2552, -97)
 texture = SubResource("AtlasTexture_pc78h")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Cornu/HandRight"]
+position = Vector2(91.255, 18)
+rotation = 2.19562
+remote_path = NodePath("../../Cornu")
 
 [node name="ForearmRight" type="Sprite2D" parent="Cornu"]
 position = Vector2(-79.2552, -133.09)
@@ -2595,14 +2609,21 @@ texture = SubResource("AtlasTexture_6iflu")
 
 [node name="Staff" type="Sprite2D" parent="Staff"]
 visible = false
-position = Vector2(-78, 75)
-rotation = 1.60689
+position = Vector2(-13.0003, -75.0004)
+rotation = 1.79943
+scale = Vector2(1.00008, 1.00008)
 texture = SubResource("AtlasTexture_m0bb6")
 
 [node name="HandRight" type="Sprite2D" parent="Staff"]
 position = Vector2(-84.9801, -95.9211)
 scale = Vector2(1.08, 1.08)
 texture = SubResource("AtlasTexture_gjwcs")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Staff/HandRight"]
+position = Vector2(66.648, 19.371)
+rotation = 1.79943
+scale = Vector2(0.926, 0.926)
+remote_path = NodePath("../../Staff")
 
 [node name="ForearmRight" type="Sprite2D" parent="Staff"]
 position = Vector2(-89.9801, -138.921)
@@ -2748,6 +2769,12 @@ rotation = -0.448605
 scale = Vector2(1.16152, 1.16152)
 texture = SubResource("AtlasTexture_xvbsu")
 
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Shield/HandRight"]
+position = Vector2(-3.195, 5.349)
+rotation = 0.490438
+scale = Vector2(0.861, 0.861)
+remote_path = NodePath("../../Shield")
+
 [node name="ForearmRight" type="Sprite2D" parent="Shield"]
 position = Vector2(-84.3507, -132.208)
 rotation = -0.532716
@@ -2762,7 +2789,9 @@ texture = SubResource("AtlasTexture_jyo0q")
 
 [node name="Shield" type="Sprite2D" parent="Shield"]
 visible = false
-position = Vector2(-77, 97)
+position = Vector2(-84.9999, -84.0002)
+rotation = 0.0418325
+scale = Vector2(1.00007, 1.00007)
 texture = SubResource("AtlasTexture_abham")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
@@ -2871,6 +2900,7 @@ length = 79.99
 bone_angle = -1.296
 
 [node name="Handler" type="Node2D" parent="."]
+visible = false
 position = Vector2(548, 537)
 script = ExtResource("15_5xyti")
 
@@ -2979,7 +3009,6 @@ length = 79.99
 bone_angle = -1.296
 
 [node name="Poleaxe" type="Node2D" parent="Handler"]
-visible = false
 
 [node name="ArmLeft" type="Sprite2D" parent="Handler/Poleaxe"]
 position = Vector2(46, -179.5)
@@ -3071,6 +3100,7 @@ libraries = {
 }
 
 [node name="Animation_Helper" type="Node2D" parent="."]
+visible = false
 position = Vector2(548, 537)
 
 [node name="Skeleton2D" type="Skeleton2D" parent="Animation_Helper"]
