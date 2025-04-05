@@ -30,7 +30,7 @@ func switch_action() -> void:
 			text = "ATTACK"
 			color = Color.DARK_GOLDENROD
 		4:
-			text = "DAMMAGE"
+			text = "DAMAGE"
 			color = Color.RED
 	entity.switch_animation(text)
 	_update(text, color)

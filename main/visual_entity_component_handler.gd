@@ -10,6 +10,8 @@ func _ready() ->void:
 	_connect_sprites_to_skeleton()
 	race_animator.root_node = skeleton.get_path()
 	class_animator.root_node = skeleton.get_path()
+	race_animator.stop()
+	class_animator.stop()
 
 
 func switch_animation(action: String) -> void:
@@ -27,11 +29,12 @@ func switch_animation(action: String) -> void:
 			race_animator.play("DWARF_FIGHT_IDLE")
 			class_animator.play("FIGHTER_FIGHT_IDLE")
 		"ATTACK":
-			race_animator.play("IDLE")
-			class_animator.play("FIGHTER_FIGHT_IDLE")
-		"DAMMAGE":
-			race_animator.play("IDLE")
-			class_animator.play("FIGHTER_FIGHT_IDLE")
+			race_animator.play("DWARF_ATTACK")
+			class_animator.play("FIGHTER_ATTACK")
+		"DAMAGE":
+			race_animator.play("DWARF_DAMAGE")
+			class_animator.play("FIGHTER_DAMAGE")
+	print("RACE ANIM: [", race_animator.current_animation, "]\nCLASS ANIM: [", class_animator.current_animation, ']')
 
 
 func _connect_sprites_to_skeleton() ->void:
