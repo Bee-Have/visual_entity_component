@@ -2,39 +2,33 @@ extends Node2D
 
 @onready var sprites_parent: Node2D = $Poleaxe
 @onready var skeleton:= $Skeleton2D
-@onready var race_animator: AnimationPlayer = $RaceAnimator
-@onready var class_animator: AnimationPlayer = $ClassAnimator
+@onready var animator: AnimationPlayer = $Animator
 var weapon_node: Sprite2D
 
 func _ready() ->void:
 	_connect_sprites_to_skeleton()
-	race_animator.root_node = skeleton.get_path()
-	class_animator.root_node = skeleton.get_path()
-	race_animator.stop()
-	class_animator.stop()
+	animator.root_node = skeleton.get_path()
+	animator.stop()
 
 
 func switch_animation(action: String) -> void:
+	var entity_class: String = sprites_parent.name.to_upper()
 	match action:
 		"IDLE":
 			if weapon_node != null:
 				weapon_node.visible = false
-			race_animator.play("IDLE")
-			class_animator.stop()
+			animator.play("IDLE")
 		"WALK":
-			race_animator.play("WALK")
+			animator.play("WALK")
 		"FIGHT":
 			if weapon_node != null:
 				weapon_node.visible = true
-			race_animator.play("DWARF_FIGHT_IDLE")
-			class_animator.play("FIGHTER_FIGHT_IDLE")
+			animator.play(entity_class + "_IDLE")
 		"ATTACK":
-			race_animator.play("DWARF_ATTACK")
-			class_animator.play("FIGHTER_ATTACK")
+			animator.play(entity_class + "_ATTACK")
 		"DAMAGE":
-			race_animator.play("DWARF_DAMAGE")
-			class_animator.play("FIGHTER_DAMAGE")
-	print("RACE ANIM: [", race_animator.current_animation, "]\nCLASS ANIM: [", class_animator.current_animation, ']')
+			animator.play(entity_class + "_DAMAGE")
+	print("ANIM: [", animator.current_animation, "]\n")
 
 
 func _connect_sprites_to_skeleton() ->void:
