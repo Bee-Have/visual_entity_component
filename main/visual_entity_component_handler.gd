@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var sprites_parent: Node2D = $Warhammer
+@onready var sprites_parent: Node2D = $Zweihander
 @onready var skeleton:= $Skeleton2D
 @onready var animator: AnimationPlayer = $Animator
 var weapon_node: Sprite2D
