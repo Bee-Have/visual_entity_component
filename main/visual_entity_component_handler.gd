@@ -1,14 +1,15 @@
 extends Node2D
 
-@onready var sprites_parent: Node2D = $Poleaxe
+@onready var sprites_parent: Node2D = $Hammer
 @onready var skeleton:= $Skeleton2D
 @onready var animator: AnimationPlayer = $Animator
 var weapon_node: Sprite2D
 
 func _ready() ->void:
-	_connect_sprites_to_skeleton()
 	animator.root_node = skeleton.get_path()
+	animator.play("IDLE")
 	animator.stop()
+	_connect_sprites_to_skeleton()
 
 
 func switch_animation(action: String) -> void:
@@ -19,7 +20,7 @@ func switch_animation(action: String) -> void:
 				weapon_node.visible = false
 			animator.play("IDLE")
 		"WALK":
-			animator.play("WALK")
+			animator.play(entity_class + "_WALK")
 		"FIGHT":
 			if weapon_node != null:
 				weapon_node.visible = true
