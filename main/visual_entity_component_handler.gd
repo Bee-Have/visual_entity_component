@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var sprites_parent: Node2D = $BollocksDagger
+@onready var sprites_parent: Node2D = $Seax
 @onready var skeleton:= $Skeleton2D
 @onready var animator: AnimationPlayer = $Animator
 var weapon_node: Sprite2D
@@ -46,7 +46,7 @@ func _connect_sprites_to_skeleton() ->void:
 
 			bone.add_child(remote)
 
-			remote.scale = body_part.scale
+			remote.scale = body_part.global_scale
 			remote.global_position = body_part.global_position
 			remote.global_rotation = body_part.global_rotation
 			remote.remote_path = _sprite_path + bone.name
