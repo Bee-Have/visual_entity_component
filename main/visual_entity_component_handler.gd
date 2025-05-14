@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var sprites_parent: Node2D = $Muscle
+@onready var sprites_parent: Node2D = $Staff
 @onready var skeleton:= $Skeleton2D
 @onready var animator: AnimationPlayer = $Animator
 var weapon_node: Sprite2D
@@ -20,6 +20,8 @@ func switch_animation(action: String) -> void:
 				weapon_node.visible = false
 			animator.play("IDLE")
 		"WALK":
+			if sprites_parent.name == "Staff":
+				weapon_node.visible = true
 			animator.play(entity_class + "_WALK")
 		"FIGHT":
 			if weapon_node != null:
